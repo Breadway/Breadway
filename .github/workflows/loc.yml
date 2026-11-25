@@ -1,0 +1,80 @@
+name: language stats
+
+on:
+  schedule:
+    # 04:17 UTC daily, off the hour to avoid the GitHub Actions queue spike
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/loc.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: language-stats
+  cancel-in-progress: true
+
+jobs:
+  loc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tokei
+        run: |
+          curl -fsSL -o tokei.tar.gz \
+            https://github.com/XAMPPRocky/tokei/releases/latest/download/tokei-x86_64-unknown-linux-gnu.tar.gz
+          tar -xzf tokei.tar.gz
+          install -m 755 tokei /usr/local/bin/tokei
+          tokei --version
+
+      - name: Check for a token that can read private repositories
+        id: token
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "::notice::STATS_TOKEN is not set, keeping the committed cards."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Clone every non-fork repository
+        if: steps.token.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          mkdir -p repos
+          gh repo list "$OWNER" --source --limit 500 --json name \
+            --jq '.[].name' > repos.txt
+          echo "cloning $(wc -l < repos.txt) repositories"
+          export GIT_TERMINAL_PROMPT=0
+          xargs -P 6 -I{} sh -c '
+            git clone --depth 1 --quiet \
+              "https://x-access-token:${GH_TOKEN}@github.com/${OWNER}/{}.git" "repos/{}" \
+              || echo "skipped {}"
+          ' < repos.txt
+          rm -f repos.txt
+          ls repos | wc -l
+
+      - name: Render cards
+        if: steps.token.outputs.skip != 'true'
+        run: python3 scripts/loc.py --repos repos --out assets
+
+      - name: Commit updated cards
+        if: steps.token.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
+            echo "stats unchanged"
+          else
+            git commit -m "chore: refresh language stats"
+            git push
+          fi
