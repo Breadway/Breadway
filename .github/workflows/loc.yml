@@ -27,10 +27,13 @@ jobs:
 
       - name: Install tokei
         run: |
-          curl -fsSL -o tokei.tar.gz \
-            https://github.com/XAMPPRocky/tokei/releases/latest/download/tokei-x86_64-unknown-linux-gnu.tar.gz
-          tar -xzf tokei.tar.gz
-          install -m 755 tokei /usr/local/bin/tokei
+          set -euo pipefail
+          if ! command -v tokei >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            if ! sudo apt-get install -y -qq tokei; then
+              cargo install --locked tokei
+            fi
+          fi
           tokei --version
 
       - name: Check for a token that can read private repositories
