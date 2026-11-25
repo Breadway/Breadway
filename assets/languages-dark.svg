@@ -5,7 +5,7 @@
 </style>
 <rect x="0.5" y="0.5" width="494" height="338" rx="8" fill="#0d1117" stroke="#30363d"/>
 <text x="24" y="34" font-size="15" font-weight="600" fill="#e6edf3">Code by language</text>
-<text x="471" y="34" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="end" class="num">654,866 LOC</text>
+<text x="471" y="34" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="end" class="num">655,283 LOC</text>
 <line x1="24" y1="46" x2="471" y2="46" stroke="#21262d"/>
 <circle cx="28" cy="62" r="4.5" fill="#dea584"/>
 <text x="40" y="66" font-size="13" fill="#e6edf3">Rust</text>
@@ -16,8 +16,8 @@
 <circle cx="28" cy="89" r="4.5" fill="#3572a5"/>
 <text x="40" y="93" font-size="13" fill="#e6edf3">Python</text>
 <rect x="200" y="83" width="170" height="7" rx="3.5" fill="#21262d"/>
-<rect x="200" y="83" width="16.3" height="7" rx="3.5" fill="#3572a5"/>
-<text x="413" y="93" font-size="12" fill="#8b949e" text-anchor="end" class="num">62,825</text>
+<rect x="200" y="83" width="16.4" height="7" rx="3.5" fill="#3572a5"/>
+<text x="413" y="93" font-size="12" fill="#8b949e" text-anchor="end" class="num">63,108</text>
 <text x="471" y="93" font-size="12" fill="#e6edf3" text-anchor="end" class="num">9.6%</text>
 <circle cx="28" cy="116" r="4.5" fill="#00add8"/>
 <text x="40" y="120" font-size="13" fill="#e6edf3">Go</text>
@@ -59,9 +59,9 @@
 <text x="40" y="282" font-size="13" fill="#e6edf3">Other (30 langs)</text>
 <rect x="200" y="272" width="170" height="7" rx="3.5" fill="#21262d"/>
 <rect x="200" y="272" width="19.8" height="7" rx="3.5" fill="#8b949e"/>
-<text x="413" y="282" font-size="12" fill="#8b949e" text-anchor="end" class="num">76,369</text>
+<text x="413" y="282" font-size="12" fill="#8b949e" text-anchor="end" class="num">76,503</text>
 <text x="471" y="282" font-size="12" fill="#e6edf3" text-anchor="end" class="num">11.7%</text>
 <line x1="24" y1="301" x2="471" y2="301" stroke="#21262d"/>
-<text x="24" y="319" font-size="11" fill="#8b949e">74 repositories &#183; 38 languages &#183; source code only</text>
-<text x="471" y="319" font-size="11" fill="#8b949e" text-anchor="end">updated 2026-11-25 04:34 UTC</text>
+<text x="24" y="319" font-size="11" fill="#8b949e">75 repositories &#183; 38 languages &#183; source code only</text>
+<text x="471" y="319" font-size="11" fill="#8b949e" text-anchor="end">updated 2026-11-25 04:37 UTC</text>
 </svg>
