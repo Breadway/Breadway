@@ -1,8 +1,7 @@
 <h1 align="center">Breadway</h1>
 
 <p align="center">
-  Sixteen, Geraldton, Western Australia.<br>
-  I build Linux desktop software and self-host the infrastructure behind it.
+  Sixteen, Geraldton, WA. I build Linux desktop software and self-host the infrastructure behind it.
 </p>
 
 <p align="center">
@@ -10,32 +9,13 @@
   <a href="https://git.breadway.dev/Breadway"><img alt="forgejo" src="https://img.shields.io/badge/git.breadway.dev-0d1117?style=flat-square&logo=gitea&logoColor=white"></a>
 </p>
 
----
-
 ## What I'm building
 
-**[Bread OS](https://github.com/Breadway/bos)** is an Arch-based Linux distribution with a fully scriptable desktop. Everything in its shell is a small, focused app rather than one monolith: a bar, a launcher, a clipboard history, a locker, a control panel, all talking to the same event bus.
-
-**[bread](https://github.com/Breadway/bread)** is the fabric underneath it. A Rust daemon normalises hardware and compositor signals into semantic events, then dispatches them to hot-reloadable Lua modules, so a dock, a monitor layout or a power profile is a short script instead of patched-together shell hooks.
-
-**[Bread ecosystem](https://github.com/Breadway/bread-ecosystem)** is the set of apps around that core: [breadbar](https://github.com/Breadway/breadbar), [breadbox](https://github.com/Breadway/breadbox), [breadclip](https://github.com/Breadway/breadclip), [breadsearch](https://github.com/Breadway/breadsearch), [breadlock](https://github.com/Breadway/breadlock), [breadpad](https://github.com/Breadway/breadpad) and friends. Mostly Rust and GTK4, plus a shared theming layer so they all look like one system.
-
-**[breadboard](https://github.com/Breadway/breadboard)** is a self-hosted issue tracker and kanban board, Rust and SQLite on the server with a Svelte frontend and a TUI and desktop client on top.
-
-**[egress](https://github.com/Breadway/egress)** gets me online from networks that block everything except HTTPS, by tunnelling WireGuard inside TLS through a relay I control.
-
-The rest is a homelab: a build server, a couple of small VPS edges, Caddy and WireGuard at the front, and Forgejo, Jellyfin, Immich and a slow-burn Nextcloud replacement behind it.
-
-## Featured projects
-
-| Project | What it is |
-| --- | --- |
-| [**bos**](https://github.com/Breadway/bos) | Bread OS: the distro, ISO build and installer |
-| [**bread**](https://github.com/Breadway/bread) | Reactive desktop automation daemon with a Lua module API |
-| [**breadboard**](https://github.com/Breadway/breadboard) | Self-hosted issue tracker, board and CLI/TUI/Tauri clients |
-| [**egress**](https://github.com/Breadway/egress) | Signed WireGuard-over-TLS client for hostile networks |
-| [**breadlock**](https://github.com/Breadway/breadlock) | Session locker and greetd greeter for Wayland |
-| [**breadbar**](https://github.com/Breadway/breadbar) | GTK4 status bar for Bread OS |
+- [**bos**](https://github.com/Breadway/bos): Arch-based Linux distribution with a scriptable desktop
+- [**bread**](https://github.com/Breadway/bread): Rust daemon that turns hardware and compositor signals into events for hot-reloadable Lua modules
+- [**bread-ecosystem**](https://github.com/Breadway/bread-ecosystem): the GTK4 apps around it, like [breadbar](https://github.com/Breadway/breadbar), [breadclip](https://github.com/Breadway/breadclip) and [breadlock](https://github.com/Breadway/breadlock)
+- [**breadboard**](https://github.com/Breadway/breadboard): self-hosted issue tracker, Rust and SQLite with a Svelte frontend
+- [**egress**](https://github.com/Breadway/egress): WireGuard inside TLS for networks that block everything but HTTPS
 
 ## Stats
 
