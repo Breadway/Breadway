@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-25 04:37 UTC",
+  "generated_at": "2026-11-26 13:51 UTC",
   "repositories": 75,
   "languages_counted": 38,
-  "total_code": 655283,
+  "total_code": 661030,
   "languages": [
     {
       "name": "Rust",
@@ -10,23 +10,23 @@
       "comments": 15999,
       "blanks": 34047,
       "files": 1308,
-      "percent": 58.69341948440597
+      "percent": 58.18313843547192
     },
     {
       "name": "Python",
-      "code": 63108,
-      "comments": 1491,
-      "blanks": 7138,
-      "files": 268,
-      "percent": 9.630648132181058
+      "code": 68099,
+      "comments": 1554,
+      "blanks": 7687,
+      "files": 287,
+      "percent": 10.301953012722569
     },
     {
       "name": "Go",
-      "code": 35679,
-      "comments": 3723,
-      "blanks": 3118,
-      "files": 260,
-      "percent": 5.444823076441781
+      "code": 35954,
+      "comments": 3761,
+      "blanks": 3146,
+      "files": 262,
+      "percent": 5.439087484682995
     },
     {
       "name": "JavaScript",
@@ -34,7 +34,7 @@
       "comments": 1593,
       "blanks": 1715,
       "files": 204,
-      "percent": 4.700259277289354
+      "percent": 4.659395186300168
     },
     {
       "name": "Dart",
@@ -42,7 +42,7 @@
       "comments": 407,
       "blanks": 1236,
       "files": 55,
-      "percent": 3.0817219430383513
+      "percent": 3.0549294283164152
     },
     {
       "name": "Lua",
@@ -50,7 +50,7 @@
       "comments": 1528,
       "blanks": 1072,
       "files": 68,
-      "percent": 2.5382926155569425
+      "percent": 2.516224679666581
     },
     {
       "name": "CSS",
@@ -58,15 +58,15 @@
       "comments": 292,
       "blanks": 3291,
       "files": 25,
-      "percent": 2.5117392027566714
+      "percent": 2.4899021224452746
     },
     {
       "name": "Shell",
-      "code": 11299,
-      "comments": 2833,
-      "blanks": 1276,
-      "files": 142,
-      "percent": 1.7242931679900135
+      "code": 11759,
+      "comments": 2881,
+      "blanks": 1320,
+      "files": 147,
+      "percent": 1.7788905193410285
     },
     {
       "name": "ShaderLab",
@@ -74,15 +74,15 @@
       "comments": 732,
       "blanks": 2499,
       "files": 23,
-      "percent": 1.662945628072146
+      "percent": 1.64848796575042
     },
     {
       "name": "Svelte",
-      "code": 10822,
+      "code": 10835,
       "comments": 18,
       "blanks": 456,
       "files": 170,
-      "percent": 1.651500191520305
+      "percent": 1.6391086637520234
     },
     {
       "name": "C++",
@@ -90,15 +90,15 @@
       "comments": 1487,
       "blanks": 1933,
       "files": 88,
-      "percent": 1.5639044504435489
+      "percent": 1.5503078528962377
     },
     {
       "name": "TypeScript",
-      "code": 8933,
+      "code": 8941,
       "comments": 873,
-      "blanks": 781,
+      "blanks": 782,
       "files": 94,
-      "percent": 1.363227796234604
+      "percent": 1.3525861156074612
     },
     {
       "name": "C Header",
@@ -106,7 +106,7 @@
       "comments": 3264,
       "blanks": 2236,
       "files": 122,
-      "percent": 0.955922860809757
+      "percent": 0.9476120599670212
     },
     {
       "name": "XML",
@@ -114,7 +114,7 @@
       "comments": 105,
       "blanks": 25,
       "files": 133,
-      "percent": 0.7856147649183635
+      "percent": 0.7787846239958852
     },
     {
       "name": "C#",
@@ -122,7 +122,7 @@
       "comments": 1429,
       "blanks": 1126,
       "files": 52,
-      "percent": 0.7634869209181377
+      "percent": 0.7568491596447967
     },
     {
       "name": "HTML",
@@ -130,7 +130,7 @@
       "comments": 15,
       "blanks": 166,
       "files": 27,
-      "percent": 0.48223439338423246
+      "percent": 0.47804184378923803
     },
     {
       "name": "SVG",
@@ -138,7 +138,7 @@
       "comments": 3,
       "blanks": 2,
       "files": 78,
-      "percent": 0.4420990625424435
+      "percent": 0.4382554498282983
     },
     {
       "name": "QML",
@@ -146,7 +146,7 @@
       "comments": 112,
       "blanks": 358,
       "files": 41,
-      "percent": 0.4105096576593624
+      "percent": 0.4069406834788134
     },
     {
       "name": "Fish",
@@ -154,7 +154,7 @@
       "comments": 49,
       "blanks": 236,
       "files": 89,
-      "percent": 0.3770889829279868
+      "percent": 0.3738105683554453
     },
     {
       "name": "BASH",
@@ -162,7 +162,7 @@
       "comments": 325,
       "blanks": 229,
       "files": 17,
-      "percent": 0.29926001437546834
+      "percent": 0.29665824546541003
     },
     {
       "name": "SQL",
@@ -170,7 +170,7 @@
       "comments": 603,
       "blanks": 175,
       "files": 61,
-      "percent": 0.19274115153300178
+      "percent": 0.19106545845120493
     },
     {
       "name": "Arduino C++",
@@ -178,7 +178,7 @@
       "comments": 201,
       "blanks": 149,
       "files": 1,
-      "percent": 0.1379556619048564
+      "percent": 0.13675627429919973
     },
     {
       "name": "Java",
@@ -186,7 +186,7 @@
       "comments": 62,
       "blanks": 72,
       "files": 4,
-      "percent": 0.11170746074596777
+      "percent": 0.11073627520687412
     },
     {
       "name": "TSX",
@@ -194,7 +194,7 @@
       "comments": 23,
       "blanks": 39,
       "files": 5,
-      "percent": 0.08149150824910764
+      "percent": 0.08078302043780161
     },
     {
       "name": "Zsh",
@@ -202,7 +202,7 @@
       "comments": 1120,
       "blanks": 175,
       "files": 1,
-      "percent": 0.06867261931104576
+      "percent": 0.06807557902061934
     },
     {
       "name": "PowerShell",
@@ -210,7 +210,7 @@
       "comments": 67,
       "blanks": 41,
       "files": 4,
-      "percent": 0.06592571453860392
+      "percent": 0.06535255585979456
     },
     {
       "name": "Pacman's makepkg",
@@ -218,7 +218,7 @@
       "comments": 57,
       "blanks": 34,
       "files": 7,
-      "percent": 0.047765621876349605
+      "percent": 0.04735034718545301
     },
     {
       "name": "Forge Config",
@@ -226,7 +226,7 @@
       "comments": 19,
       "blanks": 47,
       "files": 9,
-      "percent": 0.04318744725561322
+      "percent": 0.042811975250745045
     },
     {
       "name": "Rusty Object Notation",
@@ -234,7 +234,7 @@
       "comments": 13,
       "blanks": 0,
       "files": 4,
-      "percent": 0.04150878322800988
+      "percent": 0.041147905541352135
     },
     {
       "name": "Kotlin",
@@ -242,7 +242,7 @@
       "comments": 23,
       "blanks": 42,
       "files": 8,
-      "percent": 0.03464152129690531
+      "percent": 0.0343403476392902
     },
     {
       "name": "CMake",
@@ -250,7 +250,7 @@
       "comments": 58,
       "blanks": 43,
       "files": 4,
-      "percent": 0.025485172055432534
+      "percent": 0.02526360376987429
     },
     {
       "name": "Batch",
@@ -258,7 +258,7 @@
       "comments": 38,
       "blanks": 31,
       "files": 7,
-      "percent": 0.021059603255387367
+      "percent": 0.020876510899656597
     },
     {
       "name": "HLSL",
@@ -266,7 +266,7 @@
       "comments": 18,
       "blanks": 30,
       "files": 1,
-      "percent": 0.019838756689857663
+      "percent": 0.019666278383734477
     },
     {
       "name": "Makefile",
@@ -274,7 +274,7 @@
       "comments": 3,
       "blanks": 19,
       "files": 2,
-      "percent": 0.009461560882855193
+      "percent": 0.009379301998396442
     },
     {
       "name": "INI",
@@ -282,7 +282,7 @@
       "comments": 1,
       "blanks": 6,
       "files": 3,
-      "percent": 0.007325079393178216
+      "percent": 0.007261395095532729
     },
     {
       "name": "Templ",
@@ -290,7 +290,7 @@
       "comments": 0,
       "blanks": 6,
       "files": 1,
-      "percent": 0.005035992082810022
+      "percent": 0.0049922091281787515
     },
     {
       "name": "Dockerfile",
@@ -298,7 +298,7 @@
       "comments": 2,
       "blanks": 1,
       "files": 2,
-      "percent": 0.0030521164138242562
+      "percent": 0.0030255812898053037
     },
     {
       "name": "Prolog",
@@ -306,7 +306,7 @@
       "comments": 0,
       "blanks": 0,
       "files": 1,
-      "percent": 0.0001526058206912128
+      "percent": 0.0001512790644902652
     }
   ]
 }
